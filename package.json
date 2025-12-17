@@ -1,0 +1,34 @@
+{
+	"name": "auto-issues",
+	"version": "1.0.0",
+	"description": "The issue tracker for you AI coding agent",
+	"main": "index.js",
+	"bin": {
+		"auto-issues": "./dist/server.js"
+	},
+	"scripts": {
+		"build": "tsc && chmod 755 ./dist/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adnomina/auto-issues.git"
+	},
+	"keywords": [],
+	"author": "Nicolas Herschke",
+	"license": "GPL-3.0",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/adnomina/auto-issues/issues"
+	},
+	"homepage": "https://github.com/adnomina/auto-issues#readme",
+	"devDependencies": {
+		"@types/better-sqlite3": "^7.6.13",
+		"@types/node": "^25.0.3",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.25.1",
+		"better-sqlite3": "^12.5.0",
+		"zod": "^4.2.1"
+	}
+}
