@@ -44,12 +44,15 @@ const routes: FastifyPluginAsync = async (fastify) => {
                 },
                 response: {
                     200: {
-                        type: "object",
-                        properties: {
-                            id: { type: "number" },
-                            name: { type: "string" },
-                            description: { type: "string" },
-                            status: { type: "string" },
+                        type: "array",
+                        items: {
+                            type: "object",
+                            properties: {
+                                id: { type: "number" },
+                                name: { type: "string" },
+                                description: { type: "string" },
+                                status: { type: "string" },
+                            },
                         },
                     },
                 },
